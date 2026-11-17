@@ -1,0 +1,34 @@
+{
+    "version": "1.0.0",
+    "description": "Fast, native Windows 11 download manager with multi-connection acceleration and HLS/DASH stream capture.",
+    "homepage": "https://github.com/alve33/Radium-Download-Manager",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/alve33/Radium-Download-Manager/releases/download/v1.0.0/Radium-v1.0.0-Windows-x64-Full.zip",
+            "hash": "489ae48f8114e4135176fe9561159c7424abc797b37175ef58ab8e665e63e39f"
+        },
+        "arm64": {
+            "url": "https://github.com/alve33/Radium-Download-Manager/releases/download/v1.0.0/Radium-v1.0.0-Windows-ARM64-Full.zip",
+            "hash": "147b1e11515adb9ff5cc7309ce568ec3f1a6b281bae29b62239be4f4dccc00d5"
+        }
+    },
+    "bin": "radium.exe",
+    "shortcuts": [
+        [
+            "radium.exe",
+            "Radium Download Manager"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/alve33/Radium-Download-Manager/releases/download/v$version/Radium-v$version-Windows-x64-Full.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/alve33/Radium-Download-Manager/releases/download/v$version/Radium-v$version-Windows-ARM64-Full.zip"
+            }
+        }
+    }
+}
